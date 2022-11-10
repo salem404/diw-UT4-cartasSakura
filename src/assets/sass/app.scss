@@ -1,0 +1,36 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Antique&family=Zen+Maru+Gothic&display=swap');
+
+// Variables de color
+//Colores de día
+$diaPrimario: #e2a5aa;
+$diaSecundario: #cd8188;
+$diaRojo: #bf503f;
+$diaAmarillo: #ddcb78;
+$diaFondo: #f0e1c4;
+
+//Colores de noche
+$nochePrimario: #482020;
+$nocheSecundario: #3a1d20;
+$nocheRojo: #6e1d1f;
+$nocheAmarillo: #ba914f;
+$nocheFondo: #af957f;
+
+//Variables de fonts
+$mochiy: Mochiy Pop One;
+$antique: Zen Antique;
+$maru: Zen Maru Gothic;
+
+html {
+  background-color: $diaFondo;
+}
+
+body {
+  font-family: $mochiy;
+}
+
+header{
+  background-color: $diaSecundario;
+}
