@@ -9,10 +9,8 @@
     "name": "Paula",
     "email": "prumrom944@g.educaand.es"
   },
-  "dependencies": {
-    "parcel": "^2.8.0"
-  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.0"
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0"
   }
 }

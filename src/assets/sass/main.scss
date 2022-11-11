@@ -1,0 +1,73 @@
+//Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Antique&family=Zen+Maru+Gothic&display=swap");
+
+// Variables de color
+//Colores de día
+$diaPrimario: #e2a5aa;
+$diaSecundario: #cd8188;
+$diaRojo: #bf503f;
+$diaAmarillo: #ddcb78;
+$diaFondo: #f0e1c4;
+
+//Colores de noche
+$nochePrimario: #482020;
+$nocheSecundario: #3a1d20;
+$nocheRojo: #6e1d1f;
+$nocheAmarillo: #ba914f;
+$nocheFondo: #af957f;
+
+//Variables de fonts
+$mochiy: Mochiy Pop One;
+$antique: Zen Antique;
+$maru: Zen Maru Gothic;
+
+html {
+  background-color: $diaFondo;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: $mochiy;
+}
+
+header {
+  background-color: $diaSecundario;
+  text-align: center;
+}
+
+img {
+  size: 5rem;
+}
+
+button {
+  background-color: $diaPrimario;
+  background-image: url(/src/assets/img/accesoDia.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  margin: 5%;
+  font-size: 16px;
+  cursor: pointer;
+  width: 8em;
+  height: 8em;
+  box-shadow: 0px 4px 6px 0px darken($diaSecundario,10%);
+}
+
+button:active {
+  position: relative;
+  top: 2px;
+  box-shadow: 0px 0px 4px 6px darken($diaSecundario,10%);
+}
+
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: ease;
+}
