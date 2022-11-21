@@ -1,1 +1,54 @@
 <!--Registro de usuario-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Sakura Cards</title>
+    <link rel="stylesheet" href="/src/assets/sass/main.scss" />
+    <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
+  </head>
+  <body>
+    <header>
+      <a href="/src/index.html">
+        <img src="/src/assets/img/logo.png" />
+      </a>
+      <a href="login.html" class="access"> </a>
+    </header>
+    <main>
+      <h1>Registro</h1>
+      <subtitle>
+        ¿Ya tienes cuenta?
+        <a href="login.html">¡Login!</a></subtitle
+      >
+      <form>
+        <form-group>
+          <label>Usuario</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Introduce tu usuario"
+          />
+          <label>Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Introduce tu contraseña"
+          />
+          <label>Repetir contraseña</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Repite tu contraseña"
+          />
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Introduce tu email" />
+        </form-group>
+        <button type="submit" name="Enviar">¡Libéralo ahora!</button>
+      </form>
+    </main>
+    <footer>
+      <a class="modo">o</a>
+      <a href="404.html">Politica de privacidad</a>
+      <a class="contacto" href="/src/contacto.html">o</a>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,7 @@
   <head>
     <title>Sakura Cards</title>
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
+    <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
   </head>
   <body>
     <header>
@@ -33,11 +34,16 @@
             placeholder="Introduce tu contraseña"
           />
         </form-group>
-        <button type="submit" name="Login con Google">G</button>
-        <button type="submit" name="Login con Twitter">T</button>
-        <button type="submit" name="Enviar">¡Libéralo ahora!</button>
+        <button type="button" name="Login con Google">G</button>
+        <button type="button" name="Login con Twitter">T</button>
+        <button type="submit" name="Enviar">
+          <a href="perfil.html">¡Libéralo ahora!</a>
+        </button>
       </form>
-      <p>¿No puedes acceder? <a href="">Reestablecer contraseña</a></p>
+      <p>
+        ¿No puedes acceder?
+        <a href="/src/recuperar.html">Reestablecer contraseña</a>
+      </p>
     </main>
     <footer>
       <a class="modo">o</a>
