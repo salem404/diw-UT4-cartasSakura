@@ -1,20 +1,48 @@
 <!--Login de usuario-->
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Sakura login</title>
-        <link rel="stylesheet" href="/src/assets/sass/main.scss" />
-    </head>
-    <body>
-        <header>
-          <a href="/src/index.html">
-            <img src="/src/assets/img/logo.png" />
-          </a>
-          <a href="/src/login.html">
-            <button></button>
-          </a>
-        </header>
-        <main id="content"></main>
-        <footer></footer>
-      </body>
+  <head>
+    <title>Sakura Cards</title>
+    <link rel="stylesheet" href="/src/assets/sass/main.scss" />
+  </head>
+  <body>
+    <header>
+      <a href="/src/index.html">
+        <img src="/src/assets/img/logo.png" />
+      </a>
+      <a href="login.html" class="access"> </a>
+    </header>
+    <main>
+      <h1>Login</h1>
+      <subtitle>
+        ¿No tienes cuenta?
+        <a href="registro.html">¡Registrate ahora!</a></subtitle
+      >
+      <form>
+        <form-group>
+          <label>Usuario</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Introduce tu usuario"
+          />
+          <label>Contraseña</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Introduce tu contraseña"
+          />
+        </form-group>
+        <button type="submit" name="Login con Google">G</button>
+        <button type="submit" name="Login con Twitter">T</button>
+        <button type="submit" name="Enviar">¡Libéralo ahora!</button>
+      </form>
+      <p>¿No puedes acceder? <a href="">Reestablecer contraseña</a></p>
+    </main>
+    <footer>
+      <a class="modo">o</a>
+      <a href="404.html">Politica de privacidad</a>
+      <a class="contacto" href="/src/contacto.html">o</a>
+    </footer>
+  </body>
 </html>

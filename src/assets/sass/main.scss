@@ -23,18 +23,16 @@ $mochiy: Mochiy Pop One;
 $antique: Zen Antique;
 $maru: Zen Maru Gothic;
 
-* {
-  box-sizing: inherit;
-  transition-property: all;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
-}
-
 html {
   background-color: $diaFondo;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+}
+
+p {
+  font-family: $maru;
+  color: $diaRojo;
 }
 
 header {
@@ -75,9 +73,10 @@ body {
 main {
   padding: 1rem;
   margin-top: 8rem;
+  padding-bottom: 5rem;
 }
 
-button {
+.access {
   background-image: url(../img/accesoDia.svg);
   background-size: 3em;
   background-repeat: no-repeat;
@@ -98,4 +97,29 @@ button:active {
   position: relative;
   top: 2px;
   box-shadow: 0px 0px 4px 6px darken($diaSecundario, 10%);
+}
+
+h1 {
+  font-family: $mochiy;
+  color: $diaSecundario;
+}
+subtitle {
+  font-family: $antique;
+  color: $diaRojo;
+}
+
+footer {
+  background-color: $diaPrimario;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+}
+
+form-group {
+  background-color: $diaPrimario;
+  label {
+    font-family: $maru;
+  }
 }
