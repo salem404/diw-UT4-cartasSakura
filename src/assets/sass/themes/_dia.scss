@@ -1,0 +1,19 @@
+[tema="dia"] {
+  //Colores
+  --primary-color: #{$diaPrimario};
+  --secondary-color: #{$diaSecundario};
+  --special-red: #{$diaRojo};
+  --special-yellow: #{$diaAmarillo};
+  --background-color: #{$diaFondo};
+  //Imagenes
+  --access-image: url(/src/assets/img/accesoDia.svg);
+  --mode-image: url(/src/assets/img/modoDia.svg);
+  --contact-image: url(/src/assets/img/contactoDia.svg);
+  --right-wing: url(/src/assets/img/diaAlaDrc.svg);
+  --left-wing: url(/src/assets/img/diaAlaIzq.svg);
+  --google-image: url(/src/assets/img/googleDia.svg);
+  --happy-kero: url(/src/assets/img/happyKeroDia.svg);
+  --kero: url(/src/assets/img/keroDia.svg);
+  --search-image: url(/src/assets/img/searchDia.svg);
+  --twitter-image: url(/src/assets/img/twitterDia.svg);
+}

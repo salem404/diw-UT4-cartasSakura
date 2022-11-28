@@ -1,10 +1,10 @@
 <!--Página de contacto-->
 <!DOCTYPE html>
-<html lang="es">
+<html tema="dia">
   <head>
     <title>Sakura Cards</title>
-    <link rel="stylesheet" href="/src/assets/sass/main.scss" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
+    <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
   <body>
     <header>
@@ -26,9 +26,13 @@
       </form>
     </main>
     <footer>
-      <a class="modo">o</a>
+      <label id="switch">
+        <input type="checkbox" class="dale" checked />
+        <span class="modo"></span>
+      </label>
       <a href="404.html">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html">o</a>
     </footer>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

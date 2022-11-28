@@ -1,0 +1,19 @@
+[tema="noche"] {
+  //Colores
+  --primary-color: #{$nochePrimario};
+  --secondary-color: #{$nocheSecundario};
+  --special-red: #{$nocheRojo};
+  --special-yellow: #{$nocheAmarillo};
+  --background-color: #{$nocheFondo};
+  //Imagenes
+  --access-image: url(/src/assets/img/accesoNoche.svg);
+  --mode-image: url(/src/assets/img/modoNoche.svg);
+  --contact-image: url(/src/assets/img/contactoNoche.svg);
+  --right-wing: url(/src/assets/img/nocheAlaDrc.svg);
+  --left-wing: url(/src/assets/img/nocheAlaIzq.svg);
+  --google-image: url(/src/assets/img/googleNoche.svg);
+  --happy-kero: url(/src/assets/img/happyKeroNoche.svg);
+  --kero: url(/src/assets/img/keroNoche.svg);
+  --search-image: url(/src/assets/img/searchNoche.svg);
+  --twitter-image: url(/src/assets/img/twitterNoche.svg);
+}
