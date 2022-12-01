@@ -1,30 +1,43 @@
 <!--Página de inicio-->
 <!DOCTYPE html>
 <html tema="dia">
-  <head>
+  <head lang="es">
     <title>Sakura Cards</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
   <body>
     <header>
-      <a href="/src/index.html" class="header-left">
+      <a href="/src/index.html">
         <img src="/src/assets/img/logo.png" />
       </a>
-      <a href="/src/login.html" class="access header-right"></a>
+      <a href="/src/login.html" class="access"></a>
     </header>
     <main>
-      <img src="/src/assets/img/logo.png" />
-      <h1 class="title">Librería de cartas</h1>
-      <subtitle>
-        Todas las cartas Sakura y Clow en un mismo sitio, ¡descúbrelas!
-      </subtitle>
-      <a href="/src/listado.html" class="cardview">Ver cartas</a>
-      <img src="/src/assets/img/group.png" />
+      <div class="wrapper">
+        <div class="uno">
+          <img src="/src/assets/img/logo.png" />
+          
+            <h1 class="title bienvenida">Librería de cartas</h1>
+            <p class="subtitle bienvenida">
+              Todas las cartas Sakura y Clow en un mismo sitio, ¡descúbrelas!
+            </p>
+          
+            <p>
+              <a href="/src/listado.html" class="cardview mobile-invisible">Ver cartas</a>
+            </p>
+        </div>
+        <img src="/src/assets/img/group.png" class="dos" />
+        <p>
+          <a href="/src/listado.html" class="cardview mobile-visible">Ver cartas</a>
+        </p>
+      </div>
     </main>
     <footer>
       <label id="switch">
-        <input type="checkbox" class="dale" checked/>
+        <input type="checkbox" class="dale" checked />
         <span class="modo"></span>
       </label>
       <a href="404.html">Politica de privacidad</a>
