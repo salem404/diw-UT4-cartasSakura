@@ -6,18 +6,29 @@ header {
   height: 8rem;
   background-color: var(--primary-color);
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  text-align: bottom;
 
   img {
+    padding: 0.5rem;
     margin: 0 auto;
     width: auto;
-    height: 4em;
+    height: auto;
+    max-height: 4em;
   }
-  button {
-    width: 4em;
-    margin-right: 0%;
+
+  a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    max-height: 4em;
   }
   .buscador {
     width: 70em;
