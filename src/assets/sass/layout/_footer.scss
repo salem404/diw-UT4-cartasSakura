@@ -4,6 +4,16 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-family: $antique;
+    color: var(--special-yellow);
+  }
+  .footer-left {
+    margin: 50%;
+  }
 }
-

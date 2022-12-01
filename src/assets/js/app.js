@@ -1,10 +1,10 @@
-const colorswitch = document.querySelector('#switch input[type="checkbox"]')
-function cambiaTema(ev) {
-  if (ev.target.checked) {
-    document.documentElement.setAttribute("tema", "dia")
-  } else {
+const colorswitch = document.querySelector("input[type='button']")
+function cambiaTema() {
+  if (document.documentElement.getAttribute("tema") == "dia") {
     document.documentElement.setAttribute("tema", "noche")
+  } else {
+    document.documentElement.setAttribute("tema", "dia")
   }
 }
 
-colorswitch.addEventListener("change", cambiaTema)
+colorswitch.addEventListener("click", cambiaTema)
