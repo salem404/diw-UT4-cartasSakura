@@ -13,8 +13,20 @@
       <a href="/src/index.html">
         <img src="/src/assets/img/logo.png" />
       </a>
+      <input
+        type="text"
+        name="buscador"
+        id="buscador"
+        class="mobile-invisible"
+      />
       <a href="/src/login.html" class="access"></a>
     </header>
+    <input
+      type="text"
+      name="buscador"
+      id="buscador"
+      class="mobile-visible flotante"
+    />
     <main>
       <div class="wrapper">
         <div class="uno">
@@ -43,7 +55,20 @@
     </main>
     <footer>
       <input type="button" id="modo" />
-      <a href="404.html">Politica de privacidad</a>
+
+      <div class="input-number-group mobile-invisible">
+        <button class="alaIzq "></button>
+        <input
+          class=" input-number "
+          type="number"
+          value="1"
+          min="0"
+          max="1000"
+        />
+        <button class="alaDrc"></button>
+      </div>
+
+      <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
     </footer>
     <script src="assets/js/app.js"></script>
