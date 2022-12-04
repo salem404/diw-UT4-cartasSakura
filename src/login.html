@@ -3,6 +3,7 @@
 <html tema="dia">
   <head>
     <title>Sakura Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
@@ -13,33 +14,27 @@
       </a>
       <a href="login.html" class="access"> </a>
     </header>
-    <main>
+    <main class="formulario">
       <h1>Login</h1>
-      <subtitle>
+      <p class="subtitle">
         ¿No tienes cuenta?
-        <a href="registro.html">¡Registrate ahora!</a></subtitle
-      >
+        <a href="registro.html">¡Registrate ahora!</a>
+      </p>
       <form>
         <form-group>
           <label>Usuario</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Introduce tu usuario"
-          />
+          <input type="text" name="username" />
           <label>Contraseña</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Introduce tu contraseña"
-          />
+          <input type="password" name="password" />
         </form-group>
-        <button type="button" name="Login con Google">G</button>
-        <button type="button" name="Login con Twitter">T</button>
-        <button type="submit" name="Enviar">
-          <a href="perfil.html">¡Libéralo ahora!</a>
-        </button>
+        <div class="socials">
+          <a href="404.html" class="google"></a>
+          <a href="404.html" class="twitter"></a>
+        </div>
       </form>
+      <button type="submit" name="Enviar">
+        <a href="perfil.html">¡Libéralo ahora!</a>
+      </button>
       <p>
         ¿No puedes acceder?
         <a href="/src/recuperar.html">Reestablecer contraseña</a>
@@ -47,7 +42,7 @@
     </main>
     <footer>
       <input type="button" id="modo" />
-      <a href="404.html">Politica de privacidad</a>
+      <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
     </footer>
     <script src="assets/js/app.js"></script>

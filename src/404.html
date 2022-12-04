@@ -4,6 +4,7 @@
 <html tema="dia">
   <head>
     <title>Sakura Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
@@ -12,14 +13,26 @@
       <a href="/src/index.html">
         <img src="/src/assets/img/logo.png" />
       </a>
-      <a href="login.html" class="access"> </a>
+      <input
+        type="text"
+        name="buscador"
+        id="buscador"
+        class="mobile-invisible"
+      />
+      <a href="/src/login.html" class="access"></a>
     </header>
+    <input
+      type="text"
+      name="buscador"
+      id="buscador"
+      class="mobile-visible flotante"
+    />
     <main>
       <!--TODO: Animacion not found-->
     </main>
     <footer>
       <input type="button" id="modo" />
-      <a href="404.html">Politica de privacidad</a>
+      <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
     </footer>
     <script src="assets/js/app.js"></script>

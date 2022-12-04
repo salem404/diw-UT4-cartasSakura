@@ -3,6 +3,7 @@
 <html tema="dia">
   <head>
     <title>Sakura Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
@@ -13,21 +14,21 @@
       </a>
       <a href="login.html" class="access"> </a>
     </header>
-    <main>
+    <main class="formulario">
       <h1>Contáctanos</h1>
       <form>
         <form-group>
           <label>Mensaje</label>
           <textarea></textarea>
           <label>Email</label>
-          <input type="email" name="email" placeholder="Introduce tu email" />
+          <input type="email" name="email" />
         </form-group>
-        <button type="submit" name="Enviar">¡Libéralo ahora!</button>
       </form>
+      <button type="submit" name="Enviar">¡Libéralo ahora!</button>
     </main>
     <footer>
       <input type="button" id="modo" />
-      <a href="404.html">Politica de privacidad</a>
+      <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
     </footer>
     <script src="assets/js/app.js"></script>

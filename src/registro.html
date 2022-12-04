@@ -3,6 +3,7 @@
 <html tema="dia">
   <head>
     <title>Sakura Cards</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
@@ -13,41 +14,29 @@
       </a>
       <a href="login.html" class="access"> </a>
     </header>
-    <main>
+    <main class="formulario">
       <h1>Registro</h1>
-      <subtitle>
+      <p class="subtitle">
         ¿Ya tienes cuenta?
-        <a href="login.html">¡Login!</a></subtitle
-      >
+        <a href="login.html">¡Login!</a>
+      </p>
       <form>
         <form-group>
           <label>Usuario</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Introduce tu usuario"
-          />
+          <input type="text" name="username" />
           <label>Contraseña</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Introduce tu contraseña"
-          />
+          <input type="password" name="password" />
           <label>Repetir contraseña</label>
-          <input
-            type="password"
-            name="password"
-            placeholder="Repite tu contraseña"
-          />
+          <input type="password" name="password" />
           <label>Email</label>
-          <input type="email" name="email" placeholder="Introduce tu email" />
+          <input type="email" name="email" />
         </form-group>
-        <button type="submit" name="Enviar">¡Libéralo ahora!</button>
       </form>
+      <button type="submit" name="Enviar">¡Libéralo ahora!</button>
     </main>
     <footer>
       <input type="button" id="modo" />
-      <a href="404.html">Politica de privacidad</a>
+      <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
     </footer>
     <script src="assets/js/app.js"></script>

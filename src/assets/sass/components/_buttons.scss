@@ -62,3 +62,52 @@
   min-width: 3em;
   min-height: 3em;
 }
+
+.google {
+  background-image: var(--google-image);
+  background-size: 3em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 3em;
+  min-height: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+.twitter {
+  background-image: var(--twitter-image);
+  background-size: 3em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 3em;
+  min-height: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border-radius: 60px;
+  font-family: $mochiy;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 1%;
+  padding: 0.5em 3em 0.5em 3em;
+  text-align: center;
+  color: var(--special-yellow);
+  -webkit-text-stroke: 1.5px var(--special-red);
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.108);
+  a {
+    text-decoration: none;
+  }
+}
