@@ -28,21 +28,74 @@
     />
     <main>
       <!-- TODO: Carrusel -->
+      <section class="carousel" aria-label="carousel" Tabindex="0">
+        <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
+        <div class="slides">
+          <div
+            class="slides-item slide-1"
+            id="slide-1"
+            aria-label="slide 1 of 5"
+            tabindex="0"
+          >
+          <img src="/src/assets/img/cards/S1.png"/>
+          <div class="info mobile-invisible">
+            <h1>Viento</h1>
+            <p>Kanji: 風</p>
+            <p>Romaji: Kaze</p>
+            <p>Nombre inglés: The Windy</p>
+            <p>Número: 1</p>
+            <p>Primera aparición manga: Capítulo 1</p>
+            <p>Primera aparición anime: Capítulo 1</p>
+            <button class="like">
+              Like
+            </button>
+          </div>
+          </div>
+          <div
+            class="slides-item slide-2"
+            id="slide-2"
+            aria-label="slide 2 of 5"
+            tabindex="0"
+          >
+            2
+          </div>
+          <div
+            class="slides-item slide-3"
+            id="slide-3"
+            aria-label="slide 3 of 5"
+            tabindex="0"
+          >
+            3
+          </div>
+          <div
+            class="slides-item slide-4"
+            id="slide-4"
+            aria-label="slide 4 of 5"
+            tabindex="0"
+          >
+            4
+          </div>
+          <div
+            class="slides-item slide-5"
+            id="slide-5"
+            aria-label="slide 5 of 5"
+            tabindex="0"
+          >
+            5
+          </div>
+        </div>
+        <div class="carousel__nav">
+          <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1">1</a>
+          <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2">2</a>
+          <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3">3</a>
+          <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4">4</a>
+          <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5">5</a>
+        </div>
+        <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
+      </section>
     </main>
     <footer>
       <input type="button" id="modo" />
-
-      <div class="input-number-group mobile-invisible">
-        <button class="alaIzq"></button>
-        <input
-          class="input-number"
-          type="number"
-          value="1"
-          min="0"
-          max="1000"
-        />
-        <button class="alaDrc"></button>
-      </div>
 
       <a href="404.html" class="politicas">Politica de privacidad</a>
       <a class="contacto" href="/src/contacto.html"></a>
