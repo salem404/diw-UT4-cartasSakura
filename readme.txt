@@ -1,1 +1,0 @@
-Debemos añadir dos formas de incluir estilos CSS de forma directa y explicar si es recomendable su uso.

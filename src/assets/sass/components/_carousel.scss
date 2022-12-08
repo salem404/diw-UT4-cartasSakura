@@ -39,7 +39,7 @@
       border-radius: 10px;
       h1,
       p {
-        color: black;
+        color: var(--visibility-color);
       }
     }
     img {
@@ -72,24 +72,7 @@
     color: #fff;
   }
 
-  .slide-1 {
-  }
-
-  .slide-2 {
-    background-color: #bfd;
-  }
-
-  .slide-3 {
-    background-color: #cdf;
-  }
-
-  .slide-4 {
-    background-color: #dca;
-  }
-
-  .slide-5 {
-    background-color: #ffc;
-  }
+ 
 
   .carousel__skip-link {
     height: 1px;
@@ -119,5 +102,8 @@
     margin: 0 10 10 10;
     overflow: hidden;
     text-align: center;
+  }
+  .slides-item{
+    flex-direction: column;
   }
 }
