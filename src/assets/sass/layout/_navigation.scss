@@ -1,0 +1,53 @@
+.alaIzq {
+    background-image: var(--left-wing);
+    background-size: 3em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 3em;
+    min-height: 3em;
+}
+
+.alaDrc {
+    background-image: var(--right-wing);
+    background-size: 3em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 3em;
+    min-height: 3em;
+}
+
+.input-number-group {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+
+    input[type="number"] {
+        background-color: var(--special-yellow);
+        color: var(--special-red);
+        border-radius: 60px;
+        font-family: $mochiy;
+        font-size: 1em;
+        margin: auto 0.5em;
+        line-height: 0.1em;
+        padding: 0.5em 1em 0.5em 1em;
+        text-align: center;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        appearance: none;
+    }
+    .input-number {
+        padding: 0 12px;
+        text-align: center;
+        outline: none;
+        display: block;
+        margin: 0;
+    }
+}

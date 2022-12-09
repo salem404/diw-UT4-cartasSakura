@@ -2,6 +2,8 @@
 @import "base/typo";
 
 @import "utilities/variables";
+@import "utilities/mixins";
+
 @import "themes/dia";
 @import "themes/noche";
 
@@ -13,5 +15,6 @@
 @import "layout/footer";
 @import "layout/forms";
 @import "layout/list";
+@import "layout/navigation";
 
 @import "pages/home";

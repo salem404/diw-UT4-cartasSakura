@@ -1,0 +1,20 @@
+@mixin button {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.108);
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 6px 4px 0 rgba(0, 0, 0, 0.108);
+    }
+    &:active {
+        transform: translateY(2px);
+        box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.108);
+    }
+}
+@mixin circle-button($size) {
+    @include button;
+    min-width: $size;
+    min-height: $size;
+    border: none;
+    border-radius: 50%;
+}
