@@ -1,20 +1,77 @@
+@mixin pulsado {
+    transition: 120ms;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 6px 4px 0 rgba(0, 0, 0, 0.108);
+        transform: translateY(-2px);
+    }
+    &:active {
+        box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.108);
+        transform: translateY(2px);
+    }
+}
+@mixin carta {
+    @for $i from 1 through 52 {
+        &_card-#{$i} {
+            background-image: var(--card-#{$i});
+            width: 15rem;
+            height: 33rem;
+            margin: 5%;
+            background: {
+                size: 15rem;
+                repeat: no-repeat;
+                position: center;
+            }
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.108);
+            @include pulsado;
+        }
+    }
+}
+@mixin listado_cartas {
+    flex: 1 1 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    max-height: 25%;
+    margin: 50;
+    @include carta;
+}
 @mixin button {
     background-color: var(--secondary-color);
     box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.108);
-    cursor: pointer;
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0px 6px 4px 0 rgba(0, 0, 0, 0.108);
-    }
-    &:active {
-        transform: translateY(2px);
-        box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.108);
-    }
+    @include pulsado;
 }
+/// Da una forma de botón circular de un tamaño determinado.
+///
+/// @param {number} $size
+///     Tamaño del botón.
 @mixin circle-button($size) {
     @include button;
     min-width: $size;
     min-height: $size;
     border: none;
     border-radius: 50%;
+}
+@mixin titulo {
+    font-family: $mochiy;
+    color: var(--secondary-color);
+    font-size: 2em;
+    padding-bottom: 1em;
+}
+@mixin subtitulo {
+    font-family: $antique;
+    color: var(--special-red);
+    padding-bottom: 1em;
+}
+@mixin texto_relleno {
+    color: var(--special-yellow);
+    -webkit-text-stroke: 1.5px var(--special-red);
+}
+@mixin mobile-invisible {
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }

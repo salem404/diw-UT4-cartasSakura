@@ -1,16 +1,18 @@
 <!--Vista detallada-->
 <!DOCTYPE html>
-<html tema="dia">
+<html tema="dia" lang="es">
   <head>
-    <title>Sakura Cards</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakura Cards</title>
     <link rel="icon" type="image/svg" href="/src/assets/img/icon.svg" />
     <link rel="stylesheet" href="/src/assets/sass/main.scss" />
   </head>
   <body>
-    <header>
-      <a href="/src/index.html" class="header__logo">
+    <header class="header">
+      <a href="/src/index.html" class="header__logo" aria-label="Inicio">
         <svg
+          title="Logo de Sakura Cardcaptor"
           width="158"
           height="46"
           viewBox="0 0 158 46"
@@ -143,16 +145,15 @@
         type="text"
         name="buscador"
         id="buscador"
-        class="mobile-invisible"
+        class="header__buscador"
+        aria-label="Buscador"
       />
-      <a href="/src/login.html" class="access"></a>
+      <a
+        href="/src/login.html"
+        class="header__btn_acceso"
+        aria-label="Acceso"
+      ></a>
     </header>
-    <input
-      type="text"
-      name="buscador"
-      id="buscador"
-      class="mobile-visible flotante"
-    />
     <main>
       <!-- TODO: Carrusel -->
       <section class="carousel" aria-label="carousel" Tabindex="0">
@@ -356,8 +357,13 @@
         <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
       </section>
     </main>
-    <footer>
-      <input type="button" id="modo" />
+    <footer class="footer">
+      <input
+        type="button"
+        id="modo"
+        class="footer__btn_modo"
+        aria-label="Cambiar de modo (día/noche)"
+      />
       <div class="input-number-group mobile-invisible">
         <button class="alaIzq"></button>
         <input
@@ -369,8 +375,12 @@
         />
         <button class="alaDrc"></button>
       </div>
-      <a href="404.html" class="politicas">Politica de privacidad</a>
-      <a class="contacto" href="/src/contacto.html"></a>
+      <a href="404.html" class="footer__enlace_politicas">Politica de privacidad</a>
+      <a
+        class="footer__btn_contacto"
+        href="/src/contacto.html"
+        aria-label="Contacto"
+      ></a>
     </footer>
     <script src="assets/js/app.js"></script>
   </body>

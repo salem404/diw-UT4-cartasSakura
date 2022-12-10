@@ -8,7 +8,8 @@
   - [x] Botones
   - [ ] Cartas arriba :hover
   - [ ] Like btn :checked
-- [ ] Buscador flotante y carrousel alas flotantes
+- [x] Buscador flotante
+- [ ] carrousel alas flotantes
 - [ ] Bajar brightness a group
 - [ ] Recordario del modo
 
@@ -82,7 +83,6 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 ### Página de inicio
 
 - Añadido de música de fondo para cumplir el RA3e de audio
-- Botón/Link Ver cartas alargado para facilitar su uso en móbiles
 
 ### Flujo de registro y Acceso del usuario
 

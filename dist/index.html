@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="/index.html" class="header__logo">
+      <a href="/index.html" class="header__logo" aria-label="Inicio">
         <svg title="Logo de Sakura Cardcaptor" width="158" height="46" viewbox="0 0 158 46" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M107.154 0.622215C106.061 0.888882 105.003 2.25777 105.003 3.39555C105.003 3.64444 105.285 4.49777 105.638 5.29777C106.449 7.16444 107.507 10.08 107.401 10.1867C107.242 10.3289 102.412 11.0933 99.803 11.3778C98.3398 11.52 96.0305 11.7155 94.6732 11.7867C92.3463 11.9289 92.1347 11.9644 91.553 12.3911C90.0017 13.6 89.9841 15.5911 91.5177 16.96L92.2052 17.5644L95.4664 17.4578C99.0273 17.3333 101.813 17.0489 106.114 16.3378C107.648 16.0711 108.952 15.9111 109.005 15.9644C109.093 16.0533 110.115 20.0889 110.115 20.3555C110.115 20.4089 109.181 20.4622 108.035 20.48C100.596 20.5689 94.9376 25.76 94.9552 32.5155C94.9729 39.3244 99.8206 44.4089 107.119 45.28C109.305 45.5289 111.931 45.2978 114.293 44.6222C117.273 43.7511 121.362 41.3511 122.032 40.0711C122.438 39.2711 122.402 37.9378 121.962 37.2089C121.486 36.4267 120.393 35.8222 119.494 35.8222C118.947 35.8222 118.489 36.0178 117.449 36.7111C114.417 38.72 112.548 39.3778 109.587 39.5022C105.391 39.68 102.518 38.2578 101.16 35.3244C100.755 34.4533 100.684 34.0622 100.684 32.6222C100.684 31.1289 100.737 30.8267 101.16 30.0444C102.8 26.8978 107.083 25.4578 111.279 26.6133C113.271 27.1467 114.293 27.2 115.051 26.7911C115.757 26.4 116.462 25.1911 116.462 24.3555C116.462 23.4844 115.827 19.8578 115.157 17.0133C114.752 15.2711 114.628 14.4355 114.769 14.3822C114.875 14.3467 115.633 14.1155 116.462 13.8489C119.811 12.8 123.918 10.9155 124.676 10.0978C126.069 8.56888 125.258 5.9911 123.196 5.43999C122.385 5.20888 122.015 5.31555 119.776 6.38221C118.136 7.16444 113.676 8.79999 113.2 8.79999C113.059 8.79999 112.76 8.15999 112.478 7.32444C111.773 5.17332 110.715 2.61333 110.204 1.8311C109.534 0.799992 108.335 0.337769 107.154 0.622215Z" fill="var(--visibility-color)"></path>
           <path d="M136.029 3.85777C135.359 4.05332 133.032 5.52888 131.357 6.82666C125.91 11.04 120.692 17.8667 119.564 22.24C119.229 23.5733 119.212 24.7467 119.529 26.0444C120.375 29.5467 122.878 33.2622 127.638 38.0622C130.987 41.4222 133.579 43.5733 134.548 43.7511C136.822 44.1778 138.673 41.6 137.598 39.52C137.51 39.3422 136.505 38.4355 135.359 37.4933C129.665 32.7467 124.923 26.6489 124.923 24.1067C124.923 23.8222 125.276 22.88 125.716 22.0267C127.973 17.5289 132.68 12.5867 137.88 9.26221C139.079 8.49777 139.555 7.73332 139.555 6.57777C139.555 4.67554 137.809 3.32444 136.029 3.85777Z" fill="var(--visibility-color)"></path>
@@ -44,35 +44,33 @@
           <path d="M94.021 41.6356C93.9681 41.7244 93.8799 42.3644 93.8094 43.0578C93.7036 44.1778 93.7213 44.3556 93.9681 44.3556C94.1267 44.3556 94.2501 44.2311 94.2501 44.0889C94.2501 43.9467 94.3735 43.8222 94.5145 43.8222C94.6556 43.8222 94.779 43.9467 94.779 44.0889C94.779 44.2311 94.9024 44.3556 95.061 44.3556C95.3078 44.3556 95.3254 44.2133 95.2197 43.3244C95.0258 41.6889 94.9552 41.5111 94.5145 41.5111C94.2854 41.5111 94.0562 41.5644 94.021 41.6356ZM94.5322 43.2533C94.3383 43.4311 94.2854 43.2 94.3911 42.6667L94.5145 42.1333L94.5674 42.6311C94.6027 42.9156 94.5851 43.1822 94.5322 43.2533Z" fill="var(--visibility-color)"></path>
         </svg>
       </a>
-      <input type="text" name="buscador" id="buscador" class="header__buscador" aria-label="Buscador">
       <a href="/login.html" class="header__btn_acceso" aria-label="Acceso"></a>
     </header>
-    <main>
-      <div class="wrapper">
-        <div class="uno">
-          <img src="/logo.7c849107.png" alt="Logo de Sakura CardCaptor">
-
-          <h1 class="title mobile-invisible">Librería de cartas</h1>
-          <p class="subtitle mobile-invisible">
+    <main class="index">
+      <div class="index__grid">
+        <div class="index__grid_div1">
+          <img class="index__grid_div1_img" src="/logo.7c849107.png" alt="Logo de Sakura CardCaptor">
+        </div>
+        <div class="index__grid_div2">
+          <img class="index__grid_div2_img" src="/group.bf4f96c8.png" alt="Sakura, Tomoyo y Kero de Sakura CardCaptor">
+        </div>
+        <div class="index__grid_div3">
+          <h1 class="index__grid_div3_h1">Librería de cartas</h1>
+          <p class="index__grid_div3_subtitulo">
             Todas las cartas Sakura y Clow en un mismo sitio, ¡descúbrelas!
           </p>
-
           <p>
-            <a href="/listado.html" class="cardview mobile-invisible">Ver cartas</a>
+            <a href="/listado.html" class="index__grid_div3_btn_cardview">Ver cartas</a>
           </p>
         </div>
-        <div class="dos">
-          <img src="/group.bf4f96c8.png" alt="Sakura, Tomoyo y Kero de Sakura CardCaptor">
-        </div>
-        <p>
-          <a href="/listado.html" class="cardview mobile-visible">Ver cartas</a>
-        </p>
       </div>
     </main>
     <footer class="footer">
       <audio autoplay="" loop="">
-        <source src="/sakura%20card%20captors%20but%20it%27s%20lo-fi.7dc12409.mp3" type="audio/mp3"></audio><input type="button" id="modo" class="footer__btn_modo" aria-label="Cambiar de modo (día/noche)">
-      <a href="/404.html" class="politicas">Politica de privacidad</a>
+        <source src="/sakura%20card%20captors%20but%20it%27s%20lo-fi.7dc12409.mp3" type="audio/mp3">
+      </audio>
+      <input type="button" id="modo" class="footer__btn_modo" aria-label="Cambiar de modo (día/noche)">
+      <a href="/404.html" class="footer__enlace_politicas">Politica de privacidad</a>
       <a class="footer__btn_contacto" href="/contacto.html" aria-label="Contacto"></a>
     </footer>
     <script src="/index.b4ce7916.js"></script>

@@ -1,11 +1,13 @@
+////@author @salem404
+
 @import "base/reset";
 @import "base/typo";
 
 @import "utilities/variables";
-@import "utilities/mixins";
-
 @import "themes/dia";
 @import "themes/noche";
+@import "utilities/mixins";
+@import "base/base";
 
 @import "components/buttons";
 @import "components/carousel";

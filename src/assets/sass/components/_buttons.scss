@@ -46,24 +46,3 @@ button {
     text-decoration: none;
   }
 }
-
-.cardview {
-  background: {
-    image: var(--search-image);
-    color: var(--secondary-color);
-    size: contain;
-    position: 99%;
-    repeat: no-repeat;
-  }
-  border-radius: 60px;
-  font-family: $mochiy;
-  font-size: 1.5em;
-  line-height: 5em;
-  padding: 0.5em 3em 0.5em 2em;
-  text-align: center;
-  color: var(--special-yellow);
-  -webkit-text-stroke: 1.5px var(--special-red);
-  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.108);
-}
-
-//TODO: hover, focus...
