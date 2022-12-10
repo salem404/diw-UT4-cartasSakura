@@ -1,16 +1,18 @@
 # Sakura Cards
 
+![https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif](https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif)
+
 - [ ] Documentar código
 - [x] Descargar otras versiones del logo
 - [x] Dos formas de incluir CSS directamente y la recomendación de su uso
 - [ ] Mixings con cosas repetidas
 - [ ] Transiciones elementos con distintos eventos
   - [x] Botones
-  - [ ] Cartas arriba :hover
+  - [x] Cartas arriba :hover
   - [ ] Like btn :checked
 - [x] Buscador flotante
 - [ ] carrousel alas flotantes
-- [ ] Bajar brightness a group
+- [x] Bajar brightness a group
 - [ ] Recordario del modo
 
 ## Incluir CSS
@@ -82,15 +84,22 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 
 ### Página de inicio
 
-- Añadido de música de fondo para cumplir el RA3e de audio
+- Añadido de música de fondo para cumplir el RA3e de audio.
 
 ### Flujo de registro y Acceso del usuario
 
+- Cambio de localización de los botones sociales para aumentar la cohesión del formulario.
+- Bordes añadidos para mejorar la visibilidad.
+
 ### Listado de productos
+
+- La cantidad de cartas por fila depende del flex, por lo que es variable.
 
 ### Vista de producto
 
 ### Página de contacto
+
+Sin cambios
 
 ### Página 404
 

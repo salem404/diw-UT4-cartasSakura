@@ -1,3 +1,4 @@
+// Animación
 @mixin pulsado {
     transition: 120ms;
     cursor: pointer;
@@ -10,6 +11,7 @@
         transform: translateY(2px);
     }
 }
+// Componentes
 @mixin carta {
     @for $i from 1 through 52 {
         &_card-#{$i} {
@@ -55,6 +57,7 @@
     border: none;
     border-radius: 50%;
 }
+// Textos
 @mixin titulo {
     font-family: $mochiy;
     color: var(--secondary-color);
@@ -62,6 +65,7 @@
     padding-bottom: 1em;
 }
 @mixin subtitulo {
+    text-align: center;
     font-family: $antique;
     color: var(--special-red);
     padding-bottom: 1em;
@@ -70,6 +74,13 @@
     color: var(--special-yellow);
     -webkit-text-stroke: 1.5px var(--special-red);
 }
+@mixin enlace {
+    text-decoration: underline;
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
+// Utilidades
 @mixin mobile-invisible {
     @media only screen and (max-width: 768px) {
         display: none;

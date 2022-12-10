@@ -154,25 +154,65 @@
         aria-label="Acceso"
       ></a>
     </header>
-    <main class="formulario">
-      <h1>Registro</h1>
-      <p class="subtitle">
+    <main class="acceso">
+      <h1 class="acceso__titulo">Registro</h1>
+      <p class="acceso__subtitulo">
         ¿Ya tienes cuenta?
-        <a href="login.html">¡Login!</a>
+        <a class="acceso__subtitulo_enlace" href="login.html">¡Login!</a>
       </p>
-      <form>
-        <form-group>
-          <label>Usuario</label>
-          <input type="text" name="username" />
-          <label>Contraseña</label>
-          <input type="password" name="password" />
-          <label>Repetir contraseña</label>
-          <input type="password" name="password" />
-          <label>Email</label>
-          <input type="email" name="email" />
+      <form class="acceso__formulario">
+        <form-group class="acceso__formulario_campo">
+          <label for="usuario" class="acceso__formulario_campo_nombre">
+            Usuario
+          </label>
+          <input
+            type="text"
+            name="usuario"
+            class="acceso__formulario_campo_input"
+          />
+        </form-group>
+        <form-group class="acceso__formulario_campo">
+          <label for="contraseña" class="acceso__formulario_campo_nombre">
+            Contraseña
+          </label>
+          <input
+            type="password"
+            name="contraseña"
+            class="acceso__formulario_campo_input"
+          />
+        </form-group>
+        <form-group class="acceso__formulario_campo">
+          <label
+            for="repetir contraseña"
+            class="acceso__formulario_campo_nombre"
+          >
+            Repetir contraseña
+          </label>
+          <input
+            type="password"
+            name="repetir contraseña"
+            class="acceso__formulario_campo_input"
+          />
+        </form-group>
+        <form-group class="acceso__formulario_campo">
+          <label for="email" class="acceso__formulario_campo_nombre">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            class="acceso__formulario_campo_input"
+          />
         </form-group>
       </form>
-      <button type="submit" name="Enviar">¡Libéralo ahora!</button>
+      <button
+        type="submit"
+        name="Registrarse"
+        class="acceso__btn_submit"
+        onclick="document.location.href = 'login.html'"
+      >
+        ¡Libéralo ahora!
+      </button>
     </main>
     <footer class="footer">
       <input
@@ -181,7 +221,9 @@
         class="footer__btn_modo"
         aria-label="Cambiar de modo (día/noche)"
       />
-      <a href="404.html" class="footer__enlace_politicas">Politica de privacidad</a>
+      <a href="404.html" class="footer__enlace_politicas">
+        Politica de privacidad
+      </a>
       <a
         class="footer__btn_contacto"
         href="/src/contacto.html"
