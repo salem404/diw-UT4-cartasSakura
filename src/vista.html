@@ -155,208 +155,308 @@
       ></a>
     </header>
     <main class="vista">
-      <a class="prev" onclick="plusSlides(-1)"><</a>
-      <a class="next" onclick="plusSlides(1)">></a>
-      <section class="vista__carousel" aria-label="carousel" Tabindex="0">
-        <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
-        <div class="slides">
-          <div
-            class="slides-item"
-            id="slide-1"
-            aria-label="slide 1 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-1"> </a>
-            <div class="info">
-              <h1>Viento</h1>
-              <p>Kanji: 風</p>
-              <p>Romaji: Kaze</p>
-              <p>Nombre inglés: The Windy</p>
-              <p>Número: 1</p>
-              <p>Primera aparición manga: Capítulo 1</p>
-              <p>Primera aparición anime: Capítulo 1</p>
-              <button class="like">Like</button>
+      <a class="vista__skip" href="#skip-link">Skip carousel</a>
+      <ul class="vista__galeria">
+        <li class="vista__galeria_slide" id="slide-x">
+          <div class="vista__galeria_slide-item"></div>
+        </li>
+        <li class="vista__galeria_slide" id="slide-0"></li>
+        <li class="vista__galeria_slide" id="slide-1">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-1"
+                aria-label="Viento"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Viento</h1>
+                <p>Kanji: 風</p>
+                <p>Romaji: Kaze</p>
+                <p>Nombre inglés: The Windy</p>
+                <p>Número: 1</p>
+                <p>Primera aparición manga: Capítulo 1</p>
+                <p>Primera aparición anime: Capítulo 1</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item"
-            id="slide-2"
-            aria-label="slide 2 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-2"> </a>
-            <div class="info">
-              <h1>Vuelo</h1>
-              <p>Kanji: 翔</p>
-              <p>Romaji: Shō</p>
-              <p>Nombre inglés: The Fly</p>
-              <p>Número: 2</p>
-              <p>Primera aparición manga: Capítulo 2</p>
-              <p>Primera aparición anime: Capítulo 1</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-2">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-2"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Vuelo</h1>
+                <p>Kanji: 翔</p>
+                <p>Romaji: Shō</p>
+                <p>Nombre inglés: The Fly</p>
+                <p>Número: 2</p>
+                <p>Primera aparición manga: Capítulo 2</p>
+                <p>Primera aparición anime: Capítulo 1</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item"
-            id="slide-3"
-            aria-label="slide 3 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-3"> </a>
-            <div class="info">
-              <h1>Sombra</h1>
-              <p>Kanji: 影</p>
-              <p>Romaji: Kage</p>
-              <p>Nombre inglés: The Shadow</p>
-              <p>Número: 3</p>
-              <p>Primera aparición manga: Capítulo 10</p>
-              <p>Primera aparición anime: Capítulo 2</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-3">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-3"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Sombra</h1>
+                <p>Kanji: 影</p>
+                <p>Romaji: Kage</p>
+                <p>Nombre inglés: The Shadow</p>
+                <p>Número: 3</p>
+                <p>Primera aparición manga: Capítulo 10</p>
+                <p>Primera aparición anime: Capítulo 2</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item"
-            id="slide-4"
-            aria-label="slide 4 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-4"> </a>
-            <div class="info">
-              <h1>Agua</h1>
-              <p>Kanji: 水</p>
-              <p>Romaji: Mizu</p>
-              <p>Nombre inglés: The Watery</p>
-              <p>Número: 4</p>
-              <p>Primera aparición manga: Capítulo 3</p>
-              <p>Primera aparición anime: Capítulo 3</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-4">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-4"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Agua</h1>
+                <p>Kanji: 水</p>
+                <p>Romaji: Mizu</p>
+                <p>Nombre inglés: The Watery</p>
+                <p>Número: 4</p>
+                <p>Primera aparición manga: Capítulo 3</p>
+                <p>Primera aparición anime: Capítulo 3</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item slide-5"
-            id="slide-5"
-            aria-label="slide 5 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-5"> </a>
-            <div class="info">
-              <h1>Lluvia</h1>
-              <p>Kanji: 雨</p>
-              <p>Romaji: Ame</p>
-              <p>Nombre inglés: The Rain</p>
-              <p>Número: 5</p>
-              <p>Primera aparición manga:</p>
-              <p>Primera aparición anime: Capítulo 4</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-5">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-5"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Lluvia</h1>
+                <p>Kanji: 雨</p>
+                <p>Romaji: Ame</p>
+                <p>Nombre inglés: The Rain</p>
+                <p>Número: 5</p>
+                <p>Primera aparición manga:</p>
+                <p>Primera aparición anime: Capítulo 4</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item slide-6"
-            id="slide-6"
-            aria-label="slide 6 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-6"> </a>
-            <div class="info">
-              <h1>Bosque</h1>
-              <p>Kanji: 樹</p>
-              <p>Romaji: Ki</p>
-              <p>Nombre inglés: The Wood</p>
-              <p>Número: 6</p>
-              <p>Primera aparición manga: Capítulo 1</p>
-              <p>Primera aparición anime: Capítulo 4</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-6">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-6"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Bosque</h1>
+                <p>Kanji: 樹</p>
+                <p>Romaji: Ki</p>
+                <p>Nombre inglés: The Wood</p>
+                <p>Número: 6</p>
+                <p>Primera aparición manga: Capítulo 1</p>
+                <p>Primera aparición anime: Capítulo 4</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item slide-7"
-            id="slide-7"
-            aria-label="slide 7 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-7"> </a>
-            <div class="info">
-              <h1>Salto</h1>
-              <p>Kanji: 跳</p>
-              <p>Romaji: Odo</p>
-              <p>Nombre inglés: The Jump</p>
-              <p>Número: 7</p>
-              <p>Primera aparición manga: Capítulo 1</p>
-              <p>Primera aparición anime: Capítulo 5</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-7">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-7"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Salto</h1>
+                <p>Kanji: 跳</p>
+                <p>Romaji: Odo</p>
+                <p>Nombre inglés: The Jump</p>
+                <p>Número: 7</p>
+                <p>Primera aparición manga: Capítulo 1</p>
+                <p>Primera aparición anime: Capítulo 5</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item slide-8"
-            id="slide-8"
-            aria-label="slide 8 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-8"> </a>
-            <div class="info">
-              <h1>Ilusión</h1>
-              <p>Kanji: 幻</p>
-              <p>Romaji: Maboroshi</p>
-              <p>Nombre inglés: The Illusion</p>
-              <p>Número: 8</p>
-              <p>Primera aparición manga: Capítulo 5</p>
-              <p>Primera aparición anime: Capítulo 6</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-8">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-8"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Ilusión</h1>
+                <p>Kanji: 幻</p>
+                <p>Romaji: Maboroshi</p>
+                <p>Nombre inglés: The Illusion</p>
+                <p>Número: 8</p>
+                <p>Primera aparición manga: Capítulo 5</p>
+                <p>Primera aparición anime: Capítulo 6</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item slide-9"
-            id="slide-9"
-            aria-label="slide 9 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-9"> </a>
-            <div class="info">
-              <h1>Silencio</h1>
-              <p>Kanji: 静</p>
-              <p>Romaji: Sei</p>
-              <p>Nombre inglés: The Silent</p>
-              <p>Número: 9</p>
-              <p>Primera aparición manga:</p>
-              <p>Primera aparición anime: Capítulo 7</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-9">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-9"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Silencio</h1>
+                <p>Kanji: 静</p>
+                <p>Romaji: Sei</p>
+                <p>Nombre inglés: The Silent</p>
+                <p>Número: 9</p>
+                <p>Primera aparición manga:</p>
+                <p>Primera aparición anime: Capítulo 7</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-          <div
-            class="slides-item"
-            id="slide-10"
-            aria-label="slide 10 of 10"
-            tabindex="0"
-          >
-            <a href="/src/listado.html" class="slides-item_card-10"> </a>
-            <div class="info">
-              <h1>Trueno</h1>
-              <p>Kanji: 雷</p>
-              <p>Romaji: Kaminari</p>
-              <p>Nombre inglés: The Thunder</p>
-              <p>Número: 10</p>
-              <p>Primera aparición manga: Capítulo 10</p>
-              <p>Primera aparición anime: Capítulo 8</p>
-              <button class="like">Like</button>
+        </li>
+        <li class="vista__galeria_slide" id="slide-10">
+          <div class="vista__galeria_slide-item">
+            <div class="vista__galeria_slide-item_content">
+              <a
+                href="/src/listado.html"
+                class="vista__galeria_slide-item_content_card-10"
+              >
+              </a>
+              <div class="vista__galeria_slide-item_content_info">
+                <h1>Trueno</h1>
+                <p>Kanji: 雷</p>
+                <p>Romaji: Kaminari</p>
+                <p>Nombre inglés: The Thunder</p>
+                <p>Número: 10</p>
+                <p>Primera aparición manga: Capítulo 10</p>
+                <p>Primera aparición anime: Capítulo 8</p>
+                <button
+                  class="vista__galeria_slide-item_content_info_btn-like"
+                ></button>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carousel__nav">
-          <a class="slider-nav" href="#slide-1" aria-label="Go to slide 1">1</a>
-          <a class="slider-nav" href="#slide-2" aria-label="Go to slide 2">2</a>
-          <a class="slider-nav" href="#slide-3" aria-label="Go to slide 3">3</a>
-          <a class="slider-nav" href="#slide-4" aria-label="Go to slide 4">4</a>
-          <a class="slider-nav" href="#slide-5" aria-label="Go to slide 5">5</a>
-          <a class="slider-nav" href="#slide-6" aria-label="Go to slide 6">6</a>
-          <a class="slider-nav" href="#slide-7" aria-label="Go to slide 7">7</a>
-          <a class="slider-nav" href="#slide-8" aria-label="Go to slide 8">8</a>
-          <a class="slider-nav" href="#slide-9" aria-label="Go to slide 9">9</a>
-          <a class="slider-nav" href="#slide-10" aria-label="Go to slide 10"
-            >10</a
-          >
-        </div>
-        <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
-      </section>
+        </li>
+      </ul>
+      <div class="vista__skip-message" id="skip-link" tabindex="0"></div>
+      <div class="vista__nav">
+        <a
+          class="vista__nav_elemento"
+          href="#slide-1"
+          aria-label="Go to slide 1"
+          >1</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-2"
+          aria-label="Go to slide 2"
+          >2</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-3"
+          aria-label="Go to slide 3"
+          >3</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-4"
+          aria-label="Go to slide 4"
+          >4</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-5"
+          aria-label="Go to slide 5"
+          >5</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-6"
+          aria-label="Go to slide 6"
+          >6</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-7"
+          aria-label="Go to slide 7"
+          >7</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-8"
+          aria-label="Go to slide 8"
+          >8</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-9"
+          aria-label="Go to slide 9"
+          >9</a
+        >
+        <a
+          class="vista__nav_elemento"
+          href="#slide-10"
+          aria-label="Go to slide 10"
+        >
+          10
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <input
@@ -365,17 +465,6 @@
         class="footer__btn_modo"
         aria-label="Cambiar de modo (día/noche)"
       />
-      <div class="input-number-group mobile-invisible">
-        <button class="alaIzq"></button>
-        <input
-          class="input-number"
-          type="number"
-          value="1"
-          min="0"
-          max="1000"
-        />
-        <button class="alaDrc"></button>
-      </div>
       <a href="404.html" class="footer__enlace_politicas"
         >Politica de privacidad</a
       >

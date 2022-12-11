@@ -12,5 +12,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",
     "parcel": "latest"
+  },
+  "dependencies": {
+    "flickity": "^3.0.0"
   }
 }

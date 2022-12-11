@@ -28,14 +28,13 @@
 ///     Ancho de la carta.
 /// @param {number} $height
 ///     Altura de la carta.
-@mixin carta($width : 15rem) {
-    $height: $width/0.45;
+@mixin carta($width: 15rem) {
+    $height: calc($width / 0.45);
     @for $i from 1 through 52 {
         &_card-#{$i} {
             background-image: var(--card-#{$i});
             width: $width;
             height: $height;
-            margin: 5%;
             background: {
                 size: $width;
                 repeat: no-repeat;
@@ -51,7 +50,7 @@
 ///
 /// @param {number} $size
 ///     Tamaño de la carta.
-@mixin listado_cartas($size : 15rem) {
+@mixin listado_cartas($size: 15rem) {
     flex: 1 1 0;
     text-align: center;
     display: flex;

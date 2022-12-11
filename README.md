@@ -2,12 +2,6 @@
 
 ![https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif](https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif)
 
-- [ ] Documentar código
-- [ ] Mixings con cosas repetidas
-- [ ] Like btn :checked
-- [ ] carrousel alas flotantes
-- [ ] Recordario del modo
-
 ## Incluir CSS
 
 De forma directa css se puede incluir con la etiqueta `<style>` de dos formas:
@@ -94,7 +88,9 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 
 ### Vista de producto
 
-TODO: Carrousel BEM
+- Cambio de los botones de alas por números.
+- Ajuste de separaciones.
+- Cambio de color de las letras para mejorar visibilidad.
 
 ## Validación de código css
 

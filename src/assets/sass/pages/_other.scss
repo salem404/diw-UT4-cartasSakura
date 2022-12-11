@@ -52,17 +52,17 @@
         }
         &__opciones {
             flex-direction: column;
-            height: 6em;
             gap: 1em;
+            height: 6em;
             &_volver,
             &_secreto {
                 @include button;
                 @include texto_relleno;
-                white-space: nowrap;
-                padding: 1em 2em 1em 2em;
                 font: {
                     family: $mochiy;
                     size: 1em;
+                    white-space: nowrap;
+                    padding: 1em 2em 1em 2em;
                 }
             }
         }
