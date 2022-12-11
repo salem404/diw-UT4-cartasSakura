@@ -2,6 +2,17 @@
 
 ![https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif](https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif)
 
+- [Sakura Cards](#sakura-cards)
+  - [Incluir CSS](#incluir-css)
+  - [Metodología BEM](#metodología-bem)
+  - [Cambios en el diseño vs prototipado](#cambios-en-el-diseño-vs-prototipado)
+    - [Página de inicio](#página-de-inicio)
+    - [Flujo de registro, Acceso del usuario y Contacto](#flujo-de-registro-acceso-del-usuario-y-contacto)
+    - [Página de perfil de usuario](#página-de-perfil-de-usuario)
+    - [Listado de productos](#listado-de-productos)
+    - [Vista de producto](#vista-de-producto)
+  - [Validación de código css](#validación-de-código-css)
+
 ## Incluir CSS
 
 De forma directa css se puede incluir con la etiqueta `<style>` de dos formas:
@@ -95,20 +106,7 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 ## Validación de código css
 
 ![validado](https://jigsaw.w3.org/css-validator/images/vcss-blue)
+![validacion1](validate1.png)
 
-![reset](markdown/reset.png)
-![typo](markdown/typo.png)
-![variables](markdown/variables.png)
-![dia](markdown/dia.png)
-![noche](markdown/noche.png)
-![mixins](markdown/mixins.png)
-![base](markdown/base.png)
-![carousel](markdown/carousel.png)
-![animations](markdown/animations.png)
-![header](markdown/header.png)
-![footer](markdown/footer.png)
-![forms](markdown/forms.png)
-![list](markdown/list.png)
-![navigation](markdown/navigation.png)
-![home](markdown/home.png)
-![other](markdown/other.png)
+![validCSS](https://jigsaw.w3.org/css-validator/images/vcss)
+![validacion2](validate2.png)

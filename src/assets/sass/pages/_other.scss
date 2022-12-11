@@ -23,7 +23,6 @@
         justify-content: space-around;
         gap: 10%;
         margin: 1%;
-        padding-left: auto;
         &_volver,
         &_secreto {
             @include button;
@@ -61,9 +60,9 @@
                 font: {
                     family: $mochiy;
                     size: 1em;
-                    white-space: nowrap;
-                    padding: 1em 2em 1em 2em;
                 }
+                padding: 1em 2em 1em 2em;
+                white-space: nowrap;
             }
         }
     }

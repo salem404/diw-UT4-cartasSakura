@@ -4,12 +4,11 @@
   align-items: center;
   justify-content: center;
   margin: 8rem 0 4em;
-  padding-left: auto;
   &__grid {
     display: grid;
     grid: {
       template-columns: repeat(2, 50%);
-      grid-template-rows: repeat(1, 0.5fr) repeat(1, 0.5fr);
+      template-rows: repeat(1, 0.5fr) repeat(1, 0.5fr);
     }
     max-width: 90%;
     &_div1 {
