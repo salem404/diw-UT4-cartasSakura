@@ -3,16 +3,9 @@
 ![https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif](https://media.tenor.com/FwEB0qfzNtYAAAAC/card-captor-sakura-kinomoto.gif)
 
 - [ ] Documentar código
-- [x] Descargar otras versiones del logo
-- [x] Dos formas de incluir CSS directamente y la recomendación de su uso
 - [ ] Mixings con cosas repetidas
-- [ ] Transiciones elementos con distintos eventos
-  - [x] Botones
-  - [x] Cartas arriba :hover
-  - [ ] Like btn :checked
-- [x] Buscador flotante
+- [ ] Like btn :checked
 - [ ] carrousel alas flotantes
-- [x] Bajar brightness a group
 - [ ] Recordario del modo
 
 ## Incluir CSS
@@ -75,7 +68,6 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 
 ## Cambios en el diseño vs prototipado
 
-- [ ] Explicacion de cambios vs guia de estilos
 - Intercambio de colores principal y secundario en modo noche para mejorar la visibilidad.
 - La desaparición de las flechas en el footer del listado viene dado por la falta de necesidad de esta. El listado no es tan largo como para necesitar varias páginas.
 - Añadido de una página secreta para cumplir el RA3e de video al pulsar ¿? en la página 404.
@@ -86,24 +78,23 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 
 - Añadido de música de fondo para cumplir el RA3e de audio.
 
-### Flujo de registro y Acceso del usuario
+### Flujo de registro, Acceso del usuario y Contacto
 
 - Cambio de localización de los botones sociales para aumentar la cohesión del formulario.
-- Bordes añadidos para mejorar la visibilidad.
+- Bordes añadidos a los campos para mejorar la visibilidad.
+
+### Página de perfil de usuario
+
+- Cambio en el color de la línea para que se distinga mejor.
 
 ### Listado de productos
 
 - La cantidad de cartas por fila depende del flex, por lo que es variable.
+- Añadido el nombre de cada carta en español debajo para facilitar su lectura.
 
 ### Vista de producto
 
-### Página de contacto
-
-Sin cambios
-
-### Página 404
-
-### Página de perfil de usuario
+TODO: Carrousel BEM
 
 ## Validación de código css
 

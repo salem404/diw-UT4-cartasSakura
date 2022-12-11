@@ -154,32 +154,48 @@
         aria-label="Acceso"
       ></a>
     </header>
-    <main>
-      <div class="flex">
-        <img src="/src/assets/img/profileImage.png" />
-        <h1 id="nombreUsuario">sakura.lover</h1>
-        <!-- TODO: Border de oro-->
+    <main class="listado">
+      <div class="listado__usuario">
+        <img
+          src="/src/assets/img/profileImage.png"
+          class="listado__usuario_foto"
+          alt="Foto de usuario"
+        />
+        <h1 id="nombreUsuario" class="listado__usuario_nombre-usuario">
+          sakura.lover
+        </h1>
       </div>
-      <div class="listado">
-        <div class="flex">
-          <section>
-            <a href="/src/vista.html#slide-3" class="card-3"></a>
-            <h2>Sombra</h2>
-          </section>
-
-          <section>
-            <a href="/src/vista.html#slide-10" class="card-10"></a>
-            <h2>Trueno</h2>
-          </section>
-          <section>
-            <a href="/src/vista.html#slide-5" class="card-5"></a>
-            <h2>Lluvia</h2>
-          </section>
-          <section>
-            <a href="/src/vista.html#slide-4" class="card-4"></a>
-            <h2>Agua</h2>
-          </section>
-        </div>
+      <div class="listado__lista">
+        <a
+          href="/src/vista.html#slide-1"
+          class="listado__lista_favorito_card-1"
+          aria-label="Carta Viento"
+        ></a>
+        <a
+          href="/src/vista.html#slide-5"
+          class="listado__lista_favorito_card-5"
+          aria-label="Carta Lluvia"
+        ></a>
+        <a
+          href="/src/vista.html#slide-10"
+          class="listado__lista_favorito_card-10"
+          aria-label="Carta Trueno"
+        ></a>
+        <a
+          href="/src/vista.html#slide-3"
+          class="listado__lista_favorito_card-3"
+          aria-label="Carta Sombra"
+        ></a>
+        <a
+          href="/src/vista.html#slide-2"
+          class="listado__lista_favorito_card-2"
+          aria-label="Carta Vuelo"
+        ></a>
+        <a
+          href="/src/vista.html#slide-7"
+          class="listado__lista_favorito_card-7"
+          aria-label="Carta Salto"
+        ></a>
       </div>
     </main>
     <footer class="footer">
@@ -189,7 +205,9 @@
         class="footer__btn_modo"
         aria-label="Cambiar de modo (día/noche)"
       />
-      <a href="404.html" class="footer__enlace_politicas">Politica de privacidad</a>
+      <a href="404.html" class="footer__enlace_politicas"
+        >Politica de privacidad</a
+      >
       <a
         class="footer__btn_contacto"
         href="/src/contacto.html"

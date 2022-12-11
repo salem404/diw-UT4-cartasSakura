@@ -34,6 +34,7 @@
       &_subtitulo {
         @include subtitulo;
         @include mobile-invisible;
+        text-align: left;
       }
       &_btn_cardview {
         @include button;
@@ -59,8 +60,8 @@
 //Mobile
 @media only screen and (max-width: 768px) {
   .index {
-    margin: 6em 0 0 0;
     &__grid {
+      margin: 0 0 7em 0;
       display: flex;
       flex-direction: column;
       align-items: center;

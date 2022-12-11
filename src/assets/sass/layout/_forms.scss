@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   margin: 6em 0 4em 0;
-
   padding-bottom: 5em;
   &__titulo {
     @include titulo;
@@ -52,25 +51,11 @@
         color: var(--visibility-color);
       }
       &_input {
-        width: 60%;
-        margin: 2%;
-        padding: 1%;
-        font-family: $antique;
+        @include campos-formulario;
         text-align: center;
-        color: var(--background-color);
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        outline: 2px solid var(--visibility-color);
       }
       &_textarea {
-        width: 60%;
-        margin: 2%;
-        padding: 1%;
-        font-family: $antique;
-        color: var(--background-color);
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        outline: 2px solid var(--visibility-color);
+        @include campos-formulario;
         resize: vertical;
       }
       &_socials {
@@ -102,13 +87,13 @@
     }
   }
 }
-
+//Mobile
 @media only screen and (max-width: 768px) {
   .acceso {
     margin-top: 10em;
     margin-right: 0;
     &__titulo {
-      font-size: 4em;
+      font-size: 3em;
     }
     &__formulario {
       width: 100%;

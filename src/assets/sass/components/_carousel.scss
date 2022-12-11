@@ -1,107 +1,149 @@
-.carousel {
-  margin: 10 10% 10 10;
-  overflow: hidden;
-  text-align: center;
-
-  .slides {
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+.vista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin: 8em 0 4em;
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
 
-  .slides::-webkit-scrollbar {
-    display: none;
+  .prev {
+    left: 0;
   }
 
-  .slides-item {
-    align-items: center;
-    border-radius: 10px;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    margin: 0 1rem;
-    position: relative;
-    scroll-snap-align: start;
-    transform: scale(1);
-    transform-origin: center center;
-    transition: transform 0.5s;
-    width: 100%;
-    gap: 5%;
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-    .info {
-      height: 30em;
-      max-height: 30em;
-      padding: 5em 6em 5em 6em;
-      background-color: var(--primary-color);
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__carousel {
+    overflow: hidden;
+    text-align: center;
+
+    .slides {
+      width: 100%;
+      display: flex;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+
+    .slides::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slides-item {
+      align-items: center;
       border-radius: 10px;
-      h1,
-      p {
-        color: var(--visibility-color);
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      margin: 0 1rem;
+      position: relative;
+      scroll-snap-align: start;
+      transform: scale(1);
+      transform-origin: center center;
+      transition: transform 0.5s;
+
+      @include carta;
+
+      .info {
+        height: 30em;
+        max-height: 30em;
+        padding: 5em 6em 5em 6em;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        h1,
+        p {
+          color: var(--visibility-color);
+        }
+      }
+      img {
+        max-height: 30em;
+        margin: 1rem;
       }
     }
-    img {
-      max-height: 30em;
-      margin: 1rem;
+
+    .carousel__nav {
+      padding: 1.25rem 0.5rem;
     }
-  }
 
-  .carousel__nav {
-    padding: 1.25rem 0.5rem;
-  }
+    .slider-nav {
+      align-items: center;
+      background-color: #ddd;
+      border-radius: 50%;
+      color: #000;
+      display: inline-flex;
+      height: 1.5rem;
+      justify-content: center;
+      padding: 0.5rem;
+      position: relative;
+      text-decoration: none;
+      width: 1.5rem;
+    }
 
-  .slider-nav {
-    align-items: center;
-    background-color: #ddd;
-    border-radius: 50%;
-    color: #000;
-    display: inline-flex;
-    height: 1.5rem;
-    justify-content: center;
-    padding: 0.5rem;
-    position: relative;
-    text-decoration: none;
-    width: 1.5rem;
-  }
+    .slider-nav:hover,
+    .slider-nav:active {
+      background-color: #000;
+      color: #fff;
+    }
 
-  .slider-nav:hover,
-  .slider-nav:active {
-    background-color: #000;
-    color: #fff;
-  }
+    .carousel__skip-link {
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      top: auto;
+      width: 1px;
+    }
 
-  .carousel__skip-link {
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    top: auto;
-    width: 1px;
-  }
-
-  .carousel__skip-link:focus {
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    display: flex;
-    font-size: 30px;
-    height: 680px;
-    justify-content: center;
-    opacity: 0.8;
-    text-decoration: none;
-    width: 100%;
-    z-index: 1;
+    .carousel__skip-link:focus {
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      font-size: 30px;
+      height: 680px;
+      justify-content: center;
+      opacity: 0.8;
+      text-decoration: none;
+      width: 100%;
+      z-index: 1;
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .carousel {
-    margin: 0 10 10 10;
-    overflow: hidden;
-    text-align: center;
-  }
-  .slides-item {
-    flex-direction: column;
+  .vista {
+    margin-top: 10em;
+    .carousel {
+      margin: 0 10 10 10;
+      overflow: hidden;
+      text-align: center;
+    }
+    .slides-item {
+      flex-direction: column;
+    }
   }
 }

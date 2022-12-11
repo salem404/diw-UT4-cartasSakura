@@ -12,15 +12,32 @@
     }
 }
 // Componentes
-@mixin carta {
+@mixin campos-formulario {
+    width: 60%;
+    margin: 2%;
+    padding: 1%;
+    font-family: $antique;
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    outline: 2px solid var(--visibility-color);
+}
+/// Cartas del tamaño dado
+///
+/// @param {number} $width
+///     Ancho de la carta.
+/// @param {number} $height
+///     Altura de la carta.
+@mixin carta($width : 15rem) {
+    $height: $width/0.45;
     @for $i from 1 through 52 {
         &_card-#{$i} {
             background-image: var(--card-#{$i});
-            width: 15rem;
-            height: 33rem;
+            width: $width;
+            height: $height;
             margin: 5%;
             background: {
-                size: 15rem;
+                size: $width;
                 repeat: no-repeat;
                 position: center;
             }
@@ -30,7 +47,11 @@
         }
     }
 }
-@mixin listado_cartas {
+/// Listado de cartas del tamaño dado
+///
+/// @param {number} $size
+///     Tamaño de la carta.
+@mixin listado_cartas($size : 15rem) {
     flex: 1 1 0;
     text-align: center;
     display: flex;
@@ -39,7 +60,7 @@
     max-width: 200px;
     max-height: 25%;
     margin: 50;
-    @include carta;
+    @include carta($size);
 }
 @mixin button {
     background-color: var(--secondary-color);

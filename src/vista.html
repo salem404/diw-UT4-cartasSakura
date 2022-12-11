@@ -154,18 +154,19 @@
         aria-label="Acceso"
       ></a>
     </header>
-    <main>
-      <!-- TODO: Carrusel -->
-      <section class="carousel" aria-label="carousel" Tabindex="0">
+    <main class="vista">
+      <a class="prev" onclick="plusSlides(-1)"><</a>
+      <a class="next" onclick="plusSlides(1)">></a>
+      <section class="vista__carousel" aria-label="carousel" Tabindex="0">
         <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
         <div class="slides">
           <div
-            class="slides-item slide-1"
+            class="slides-item"
             id="slide-1"
             aria-label="slide 1 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-1"> </a>
+            <a href="/src/listado.html" class="slides-item_card-1"> </a>
             <div class="info">
               <h1>Viento</h1>
               <p>Kanji: 風</p>
@@ -178,12 +179,12 @@
             </div>
           </div>
           <div
-            class="slides-item slide-2"
+            class="slides-item"
             id="slide-2"
             aria-label="slide 2 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-2"> </a>
+            <a href="/src/listado.html" class="slides-item_card-2"> </a>
             <div class="info">
               <h1>Vuelo</h1>
               <p>Kanji: 翔</p>
@@ -196,12 +197,12 @@
             </div>
           </div>
           <div
-            class="slides-item slide-3"
+            class="slides-item"
             id="slide-3"
             aria-label="slide 3 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-3"> </a>
+            <a href="/src/listado.html" class="slides-item_card-3"> </a>
             <div class="info">
               <h1>Sombra</h1>
               <p>Kanji: 影</p>
@@ -214,12 +215,12 @@
             </div>
           </div>
           <div
-            class="slides-item slide-4"
+            class="slides-item"
             id="slide-4"
             aria-label="slide 4 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-4"> </a>
+            <a href="/src/listado.html" class="slides-item_card-4"> </a>
             <div class="info">
               <h1>Agua</h1>
               <p>Kanji: 水</p>
@@ -237,7 +238,7 @@
             aria-label="slide 5 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-5"> </a>
+            <a href="/src/listado.html" class="slides-item_card-5"> </a>
             <div class="info">
               <h1>Lluvia</h1>
               <p>Kanji: 雨</p>
@@ -255,7 +256,7 @@
             aria-label="slide 6 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-6"> </a>
+            <a href="/src/listado.html" class="slides-item_card-6"> </a>
             <div class="info">
               <h1>Bosque</h1>
               <p>Kanji: 樹</p>
@@ -273,7 +274,7 @@
             aria-label="slide 7 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-7"> </a>
+            <a href="/src/listado.html" class="slides-item_card-7"> </a>
             <div class="info">
               <h1>Salto</h1>
               <p>Kanji: 跳</p>
@@ -291,7 +292,7 @@
             aria-label="slide 8 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-8"> </a>
+            <a href="/src/listado.html" class="slides-item_card-8"> </a>
             <div class="info">
               <h1>Ilusión</h1>
               <p>Kanji: 幻</p>
@@ -309,7 +310,7 @@
             aria-label="slide 9 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-9"> </a>
+            <a href="/src/listado.html" class="slides-item_card-9"> </a>
             <div class="info">
               <h1>Silencio</h1>
               <p>Kanji: 静</p>
@@ -322,12 +323,12 @@
             </div>
           </div>
           <div
-            class="slides-item slide-10"
+            class="slides-item"
             id="slide-10"
             aria-label="slide 10 of 10"
             tabindex="0"
           >
-            <a href="/src/listado.html" class="card-10"> </a>
+            <a href="/src/listado.html" class="slides-item_card-10"> </a>
             <div class="info">
               <h1>Trueno</h1>
               <p>Kanji: 雷</p>
@@ -375,7 +376,9 @@
         />
         <button class="alaDrc"></button>
       </div>
-      <a href="404.html" class="footer__enlace_politicas">Politica de privacidad</a>
+      <a href="404.html" class="footer__enlace_politicas"
+        >Politica de privacidad</a
+      >
       <a
         class="footer__btn_contacto"
         href="/src/contacto.html"
