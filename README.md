@@ -94,4 +94,21 @@ Además junto a SCSS podemos simplificar aún más con formaciones como esta:
 
 ## Validación de código css
 
-- [ ] Validación del código
+![validado](https://jigsaw.w3.org/css-validator/images/vcss-blue)
+
+![reset](markdown/reset.png)
+![typo](markdown/typo.png)
+![variables](markdown/variables.png)
+![dia](markdown/dia.png)
+![noche](markdown/noche.png)
+![mixins](markdown/mixins.png)
+![base](markdown/base.png)
+![carousel](markdown/carousel.png)
+![animations](markdown/animations.png)
+![header](markdown/header.png)
+![footer](markdown/footer.png)
+![forms](markdown/forms.png)
+![list](markdown/list.png)
+![navigation](markdown/navigation.png)
+![home](markdown/home.png)
+![other](markdown/other.png)
